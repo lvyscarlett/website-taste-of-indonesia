@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Masakan - Kuliner Terkenal Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <h2>Taste Of Indonesia</h2>
+            <div class="searchBox">
+                <input type="text" placeholder="Cari Disini" id="searchInput">
+                <button onclick="searchRecipes()">Cari</button>
+            </div>        
+    </div>
+
+    <div class="recipes" id="recipes"></div>
+    <div class="notFound" id="notFound">Temukan resep masakan favoritmuu di sini!</div>
+
+    <div class="popup-card" id="popupCard">
+        <button class="close-btn" onclick="closeRecipe()">Tutup</button>
+        <h3 id="recipeTitle"></h3>
+        <img id="recipeImage" src="" alt="Recipe Image">
+        <p id="recipeDetails"></p>
+    </div>
+
+    <!-- Ulasan Section -->
+    <div class="reviews-section" id="reviews-section">
+        <h3>Ulasan Pengunjung</h3>
+        <form id="reviewForm">
+        <textarea id="reviewText" placeholder="Tulis ulasan Anda di sini..." rows="4" required></textarea><br>
+        <button type="submit">Kirim Ulasan</button>
+        </form>
+    <div id="reviewsList">
+        <!-- review ditulis disini....-->
+    </div>
+</div>
+
+<!-- Kontak Person Section -->
+    <div class="contact-section" id="contact-section">
+        <h3>Kontak Kami</h3>
+        <p>Jika Anda memiliki pertanyaan atau ingin berkolaborasi, hubungi kami melalui:</p>
+        <p>Email: <a href="mailto:info@tasteofindonesia.com">info@tasteofindonesia.com</a></p>
+        <p>Telepon: <a href="tel:+62123456789"><i class="fas fa-phone"></i> +62 123 456 789</a></p>
+        <p>Instagram: <a href="https://instagram.com/tasteofindonesia" target="_blank"><i class="fab fa-instagram"></i> @tasteofindonesia</a></p>
+        <p>Facebook: <a href="https://facebook.com/tasteofindonesia" target="_blank"><i class="fab fa-facebook"></i> @tasteofindonesia</a></p>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
